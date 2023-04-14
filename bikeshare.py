@@ -9,7 +9,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
 	
-	## Request user inputs
+#	Request user inputs
 	
     while True:
         city = input("Would you like to see bikeshare data on Chicago, New York City, or Washington? ")
@@ -79,6 +79,7 @@ def get_filters():
                       
     print('-'*40)
   
+#	Calculates most frequent time traveled
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
