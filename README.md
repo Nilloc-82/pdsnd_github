@@ -15,6 +15,7 @@ The following files used:
 	- chicago.xls
 	- new_york_city.xls
 	- washing.xls
+	- Git Commands Documentation
 
 
 ### Credits
@@ -22,5 +23,10 @@ Files generated from Udacity's Programming for Data Science with Python course.
 
 Github project forked from:
 https://github.com/udacity/pdsnd_github
+
+
+This project was resubmitted with updated comments prefixes as designated in the following guide:
+https://udacity.github.io/git-styleguide/
+
 
 
