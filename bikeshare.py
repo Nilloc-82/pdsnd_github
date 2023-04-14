@@ -100,20 +100,25 @@ def get_filters():
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
+	print('-'*40)
 
     pop_start_station = filtered_df['Start Station'].mode()[0]
     print("Most popular start station: {}".format(pop_start_station))
+	print('-'*40)
 
     pop_end_station = filtered_df['End Station'].mode()[0]
     print("Most popular end station: {}".format(pop_end_station))
+	print('-'*40)
 
     all_stations = pd.concat([filtered_df['Start Station'], filtered_df['End Station']])
     pop_all_stations = all_stations.mode()[0]
     print("Most commonly used station:{}".format(pop_all_stations))
+	print('-'*40)
     
     df['trip'] = filtered_df['Start Station'] + ' to ' + filtered_df['End Station']
     pop_trip = df['trip'].mode()[0]
     print("Most common trip: {}".format(pop_trip))
+	print('-'*40)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
