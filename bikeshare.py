@@ -8,6 +8,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
+	
+	## Request user inputs
+	
     while True:
         city = input("Would you like to see bikeshare data on Chicago, New York City, or Washington? ")
         city = city.lower()
